@@ -1,1 +1,0 @@
-"APP\Alarm.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND PRINT(.\Alarm.lst) OBJECT(Alarm.obj)

@@ -1,1 +1,0 @@
-"APP\Task.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND PRINT(.\Task.lst) OBJECT(Task.obj)

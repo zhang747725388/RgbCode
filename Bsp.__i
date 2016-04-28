@@ -1,1 +1,0 @@
-"BSP\Bsp.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND PRINT(.\Bsp.lst) OBJECT(Bsp.obj)

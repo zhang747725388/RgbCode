@@ -1,1 +1,0 @@
-"APP\Model.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND PRINT(.\Model.lst) OBJECT(Model.obj)

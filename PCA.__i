@@ -1,1 +1,0 @@
-"BSP\PCA.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND PRINT(.\PCA.lst) OBJECT(PCA.obj)
