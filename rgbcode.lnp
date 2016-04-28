@@ -1,0 +1,18 @@
+"STARTUP.obj",
+"delay.obj",
+"Timer.obj",
+"GPIO.obj",
+"TLC5620.obj",
+"key.obj",
+"PCA.obj",
+"Pwm.obj",
+"Bsp.obj",
+"USART.obj",
+"Task.obj",
+"SetChannel.obj",
+"KeyAction.obj",
+"Model.obj",
+"DASet.obj",
+"Main.obj" 
+TO "rgbcode" 
+RAMSIZE(256) 

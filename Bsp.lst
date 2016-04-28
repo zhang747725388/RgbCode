@@ -1,0 +1,38 @@
+C51 COMPILER V9.01   BSP                                                                   04/27/2016 23:53:59 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE BSP
+OBJECT MODULE PLACED IN Bsp.obj
+COMPILER INVOKED BY: C:\keil51\C51\BIN\C51.EXE BSP\Bsp.c BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJ
+                    -ECTEXTEND PRINT(.\Bsp.lst) OBJECT(Bsp.obj)
+
+line level    source
+
+   1          
+   2          #include "rsystem.h"
+   3           
+   4           void BspInit(){
+   5   1           GPIO_config();
+   6   1           TLC5620_Init();
+   7   1               Timer_config();
+   8   1               PCA_config();
+   9   1               EA=1;
+  10   1      //              UART_config();
+  11   1               SetNomalHighPwm();
+  12   1              ModeOFF();
+  13   1       }
+  14          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     20    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

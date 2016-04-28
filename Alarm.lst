@@ -1,0 +1,56 @@
+C51 COMPILER V9.01   ALARM                                                                 03/29/2016 21:57:01 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE ALARM
+OBJECT MODULE PLACED IN Alarm.obj
+COMPILER INVOKED BY: C:\keil51\C51\BIN\C51.EXE APP\Alarm.c BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG O
+                    -BJECTEXTEND PRINT(.\Alarm.lst) OBJECT(Alarm.obj)
+
+line level    source
+
+   1          #include "Alarm.h"
+   2          u16 AlarmCount=0;//报警次数
+   3          u8  AlarmFlag=1;
+   4          //SYSTIMER KEY_Tim;//按键时间基数
+   5          u8 keyflag=0;
+   6          void KeyAction(u8 flag){
+   7   1        
+   8   1      
+   9   1                                switch(flag){
+  10   2      
+  11   2                  case KEY0_LONG:
+  12   2                                                       
+  13   2                                         
+  14   2                                              break;
+  15   2                                      case KEY0_UP:
+  16   2                                                       
+  17   2                                         
+  18   2                                              break;
+  19   2          }
+  20   1      }
+  21          
+  22          void MainKeytask(void){
+  23   1      
+  24   1      //                      if(Timer_GetElapse(&KEY_Tim) >10){
+  25   1      
+  26   1                keyflag =Key_Scan();
+  27   1                        KeyAction(keyflag);
+  28   1      //                Timer_Reset(&KEY_Tim);
+  29   1      //    }
+  30   1      
+  31   1      }
+  32           
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =      9    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
