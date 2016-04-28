@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        04/18/2016  13:44:51  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/28/2016  09:58:13  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  rgbcode (?C_STARTUP)
             DATA    003FH     000DH     UNIT         ?DT?UART_CONFIG?USART
             DATA    004CH     0009H     UNIT         ?DT?PCA_CONFIG?PCA
             DATA    0055H     0008H     UNIT         ?DT?SETCHANNEL
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 2
 
 
             DATA    005DH     0007H     UNIT         ?DT?_USART_CONFIGURATION?USART
@@ -116,20 +116,20 @@ LINK MAP OF MODULE:  rgbcode (?C_STARTUP)
             CODE    0DB4H     001EH     UNIT         ?CO?KEYACTION
             CODE    0DD2H     001DH     UNIT         ?PR?UART_CONFIG?USART
             CODE    0DEFH     001BH     UNIT         ?PR?GET_KEY?KEY
-            CODE    0E0AH     001BH     UNIT         ?PR?MAIN?MAIN
-            CODE    0E25H     0018H     UNIT         ?PR?_UPDATEPWM?PCA
-            CODE    0E3DH     0016H     UNIT         ?PR?_TIMER_GETELAPSE?TIMER
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 3
+            CODE    0E0AH     0018H     UNIT         ?PR?_UPDATEPWM?PCA
+            CODE    0E22H     0017H     UNIT         ?PR?MAIN?MAIN
+            CODE    0E39H     0016H     UNIT         ?PR?_TIMER_GETELAPSE?TIMER
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 3
 
 
-            CODE    0E53H     0012H     UNIT         ?PR?_SETTIMERPWM?PWM
-            CODE    0E65H     0010H     UNIT         ?PR?_DELAY_MS?DELAY
-            CODE    0E75H     0010H     UNIT         ?PR?GPIO_CONFIG?GPIO
-            CODE    0E85H     000EH     UNIT         ?PR?_DELAY_S?DELAY
-            CODE    0E93H     0009H     UNIT         ?PR?TLC5620_INIT?TLC5620
-            CODE    0E9CH     0001H     UNIT         ?PR?MODEL3?MODEL
-            CODE    0E9DH     0001H     UNIT         ?PR?MODEL4?MODEL
-            CODE    0E9EH     0001H     UNIT         ?PR?MODEL5?MODEL
+            CODE    0E4FH     0012H     UNIT         ?PR?_SETTIMERPWM?PWM
+            CODE    0E61H     0010H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0E71H     0010H     UNIT         ?PR?GPIO_CONFIG?GPIO
+            CODE    0E81H     000EH     UNIT         ?PR?_DELAY_S?DELAY
+            CODE    0E8FH     0009H     UNIT         ?PR?TLC5620_INIT?TLC5620
+            CODE    0E98H     0001H     UNIT         ?PR?MODEL3?MODEL
+            CODE    0E99H     0001H     UNIT         ?PR?MODEL4?MODEL
+            CODE    0E9AH     0001H     UNIT         ?PR?MODEL5?MODEL
 
 
 
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   -------         MODULE        ?C_STARTUP
   C:09B9H         SEGMENT       ?C_C51STARTUP
   I:007DH         SEGMENT       ?STACK
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 4
 
 
   C:0000H         PUBLIC        ?C_STARTUP
@@ -224,8 +224,8 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:00D8H         PUBLIC        CCON
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:0E65H         PUBLIC        _delay_ms
-  C:0E85H         PUBLIC        _delay_s
+  C:0E61H         PUBLIC        _delay_ms
+  C:0E81H         PUBLIC        _delay_s
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          _DELAY_MS
@@ -233,28 +233,28 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   -------         DO            
   D:0004H         SYMBOL        i
   -------         ENDDO         
-  C:0E65H         LINE#         22
-  C:0E65H         LINE#         23
-  C:0E65H         LINE#         25
-  C:0E65H         LINE#         26
-  C:0E69H         LINE#         27
-  C:0E72H         LINE#         28
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 5
+  C:0E61H         LINE#         22
+  C:0E61H         LINE#         23
+  C:0E61H         LINE#         25
+  C:0E61H         LINE#         26
+  C:0E65H         LINE#         27
+  C:0E6EH         LINE#         28
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 5
 
 
-  C:0E74H         LINE#         29
+  C:0E70H         LINE#         29
   -------         ENDPROC       _DELAY_MS
   -------         PROC          _DELAY_S
   D:0007H         SYMBOL        s
   -------         DO            
   D:0006H         SYMBOL        temp
   -------         ENDDO         
-  C:0E85H         LINE#         40
-  C:0E85H         LINE#         42
-  C:0E8BH         LINE#         43
-  C:0E8BH         LINE#         44
-  C:0E90H         LINE#         46
-  C:0E92H         LINE#         50
+  C:0E81H         LINE#         40
+  C:0E81H         LINE#         42
+  C:0E87H         LINE#         43
+  C:0E87H         LINE#         44
+  C:0E8CH         LINE#         46
+  C:0E8EH         LINE#         50
   -------         ENDPROC       _DELAY_S
   -------         ENDMOD        DELAY
 
@@ -290,7 +290,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   B:0088H.4       PUBLIC        TR0
   B:0088H.6       PUBLIC        TR1
   C:0D94H         PUBLIC        Timer_config
-  C:0E3DH         PUBLIC        _Timer_GetElapse
+  C:0E39H         PUBLIC        _Timer_GetElapse
   D:00C8H         PUBLIC        T2CON
   C:0003H         PUBLIC        _Timer_Reset
   D:008FH         PUBLIC        INT_CLKO
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   -------         DO            
   D:0064H         SYMBOL        tickcnt
   D:0066H         SYMBOL        Testtt
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 6
 
 
   -------         ENDDO         
@@ -359,7 +359,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0639H         LINE#         123
   C:063CH         LINE#         125
   C:064AH         LINE#         126
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 7
 
 
   C:064DH         LINE#         128
@@ -417,13 +417,13 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   -------         ENDPROC       _TIMER_SET
   -------         PROC          _TIMER_GETELAPSE
   D:0001H         SYMBOL        timer
-  C:0E3DH         LINE#         185
-  C:0E3DH         LINE#         186
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 8
+  C:0E39H         LINE#         185
+  C:0E39H         LINE#         186
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 8
 
 
-  C:0E3DH         LINE#         187
-  C:0E52H         LINE#         188
+  C:0E39H         LINE#         187
+  C:0E4EH         LINE#         188
   -------         ENDPROC       _TIMER_GETELAPSE
   -------         PROC          _TIMER_RESET
   D:0001H         SYMBOL        timer
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:003FH         SYMBOL        COMx_InitStructure
   -------         ENDDO         
   C:0DD2H         LINE#         7
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 9
 
 
   C:0DD2H         LINE#         8
@@ -539,7 +539,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0537H         LINE#         73
   C:053AH         LINE#         74
   C:053DH         LINE#         75
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 10
 
 
   C:0540H         LINE#         76
@@ -599,7 +599,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0AD7H         LINE#         150
   C:0AD9H         LINE#         151
   C:0ADDH         LINE#         152
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 11
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 11
 
 
   C:0ADDH         LINE#         153
@@ -634,7 +634,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:00A0H         PUBLIC        P2
   D:00B2H         PUBLIC        P3M1
   D:00B0H         PUBLIC        P3
-  C:0E75H         PUBLIC        GPIO_config
+  C:0E71H         PUBLIC        GPIO_config
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
@@ -659,7 +659,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:07BCH         LINE#         26
   C:07CDH         LINE#         27
   C:07CDH         LINE#         28
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 12
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 12
 
 
   C:07D2H         LINE#         29
@@ -689,11 +689,11 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   -------         DO            
   D:0076H         SYMBOL        GPIO_InitStructure
   -------         ENDDO         
-  C:0E75H         LINE#         53
-  C:0E75H         LINE#         54
-  C:0E75H         LINE#         57
-  C:0E78H         LINE#         58
-  C:0E7BH         LINE#         59
+  C:0E71H         LINE#         53
+  C:0E71H         LINE#         54
+  C:0E71H         LINE#         57
+  C:0E74H         LINE#         58
+  C:0E77H         LINE#         59
   -------         ENDPROC       GPIO_CONFIG
   -------         ENDMOD        GPIO
 
@@ -708,7 +708,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
   B:00A0H.6       PUBLIC        TLC5620_LDAC
-  C:0E93H         PUBLIC        TLC5620_Init
+  C:0E8FH         PUBLIC        TLC5620_Init
   B:00A0H.7       PUBLIC        TLC5620_DATA
   B:00B0H.4       PUBLIC        TLC5620_LOAD
   D:0098H         PUBLIC        SCON
@@ -719,16 +719,16 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:001CH         PUBLIC        DadataSet
   D:00D0H         PUBLIC        PSW
   -------         PROC          TLC5620_INIT
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 13
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 13
 
 
-  C:0E93H         LINE#         16
-  C:0E93H         LINE#         17
-  C:0E93H         LINE#         18
-  C:0E95H         LINE#         19
-  C:0E97H         LINE#         20
-  C:0E99H         LINE#         21
-  C:0E9BH         LINE#         22
+  C:0E8FH         LINE#         16
+  C:0E8FH         LINE#         17
+  C:0E8FH         LINE#         18
+  C:0E91H         LINE#         19
+  C:0E93H         LINE#         20
+  C:0E95H         LINE#         21
+  C:0E97H         LINE#         22
   -------         ENDPROC       TLC5620_INIT
   -------         PROC          _TLC5620_SETOUTPUT
   D:0007H         SYMBOL        chl
@@ -779,7 +779,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:0080H         PUBLIC        P0
   D:0090H         PUBLIC        P1
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 14
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 14
 
 
   D:00A0H         PUBLIC        P2
@@ -839,7 +839,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0BAEH         LINE#         41
   C:0BB2H         LINE#         42
   C:0BB2H         LINE#         43
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 15
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 15
 
 
   C:0BB5H         LINE#         48
@@ -899,14 +899,14 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:00DAH         PUBLIC        CCAPM0
   D:00ECH         PUBLIC        CCAP2L
   D:00DBH         PUBLIC        CCAPM1
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 16
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 16
 
 
   D:00EDH         PUBLIC        CCAP3L
   D:00DCH         PUBLIC        CCAPM2
   D:00B8H         PUBLIC        IP
   D:00DDH         PUBLIC        CCAPM3
-  C:0E25H         PUBLIC        _UpdatePwm
+  C:0E0AH         PUBLIC        _UpdatePwm
   D:00D9H         PUBLIC        CMOD
   D:00D8H         PUBLIC        CCON
   B:00B8H.7       PUBLIC        PPCA
@@ -959,7 +959,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0C23H         LINE#         44
   C:0C2DH         LINE#         48
   C:0C30H         LINE#         49
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 17
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 17
 
 
   C:0C33H         LINE#         50
@@ -971,13 +971,13 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   -------         PROC          _UPDATEPWM
   D:0007H         SYMBOL        PCA_id
   D:0005H         SYMBOL        pwm_value
-  C:0E25H         LINE#         66
-  C:0E25H         LINE#         67
-  C:0E25H         LINE#         68
-  C:0E2BH         LINE#         69
-  C:0E31H         LINE#         70
-  C:0E37H         LINE#         71
-  C:0E3CH         LINE#         72
+  C:0E0AH         LINE#         66
+  C:0E0AH         LINE#         67
+  C:0E0AH         LINE#         68
+  C:0E10H         LINE#         69
+  C:0E16H         LINE#         70
+  C:0E1CH         LINE#         71
+  C:0E21H         LINE#         72
   -------         ENDPROC       _UPDATEPWM
   -------         PROC          L?0039
   -------         ENDPROC       L?0039
@@ -1019,7 +1019,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:03A0H         LINE#         120
   C:03ABH         LINE#         121
   C:03ADH         LINE#         122
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 18
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 18
 
 
   C:03AFH         LINE#         123
@@ -1079,7 +1079,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0912H         LINE#         191
   C:0914H         LINE#         192
   C:0918H         LINE#         193
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 19
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 19
 
 
   C:0918H         LINE#         194
@@ -1139,12 +1139,12 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:00D8H         PUBLIC        CCON
   D:0069H         PUBLIC        PWM_low
   D:0098H         PUBLIC        SCON
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 20
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 20
 
 
   D:0088H         PUBLIC        TCON
   D:00C8H         PUBLIC        T2CON
-  C:0E53H         PUBLIC        _SetTimerPwm
+  C:0E4FH         PUBLIC        _SetTimerPwm
   C:0CCFH         PUBLIC        _LoadPWM
   D:006BH         PUBLIC        PWM_high
   D:00D0H         PUBLIC        PSW
@@ -1167,16 +1167,16 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   -------         ENDPROC       _LOADPWM
   -------         PROC          _SETTIMERPWM
   D:0007H         SYMBOL        flag
-  C:0E53H         LINE#         24
-  C:0E53H         LINE#         26
-  C:0E59H         LINE#         28
-  C:0E59H         LINE#         29
-  C:0E5BH         LINE#         30
-  C:0E5DH         LINE#         31
-  C:0E5DH         LINE#         32
-  C:0E64H         LINE#         33
-  C:0E64H         LINE#         37
-  C:0E64H         LINE#         40
+  C:0E4FH         LINE#         24
+  C:0E4FH         LINE#         26
+  C:0E55H         LINE#         28
+  C:0E55H         LINE#         29
+  C:0E57H         LINE#         30
+  C:0E59H         LINE#         31
+  C:0E59H         LINE#         32
+  C:0E60H         LINE#         33
+  C:0E60H         LINE#         37
+  C:0E60H         LINE#         40
   -------         ENDPROC       _SETTIMERPWM
   -------         ENDMOD        PWM
 
@@ -1199,7 +1199,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:0080H         PUBLIC        P0
   D:0090H         PUBLIC        P1
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 21
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 21
 
 
   D:00A0H         PUBLIC        P2
@@ -1259,7 +1259,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:0073H         PUBLIC        keyflag
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 22
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 22
 
 
   D:00C8H         PUBLIC        T2CON
@@ -1311,15 +1311,15 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:00D8H         PUBLIC        CCON
   C:0039H         PUBLIC        Model1
   C:003AH         PUBLIC        Model2
-  C:0E9CH         PUBLIC        Model3
-  C:0E9DH         PUBLIC        Model4
-  C:0E9EH         PUBLIC        Model5
+  C:0E98H         PUBLIC        Model3
+  C:0E99H         PUBLIC        Model4
+  C:0E9AH         PUBLIC        Model5
   D:007CH         PUBLIC        modelflag
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   C:0022H         PUBLIC        ModeOFF
   D:00C8H         PUBLIC        T2CON
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 23
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 23
 
 
   C:0D04H         PUBLIC        SwitchModel
@@ -1337,16 +1337,16 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:003AH         LINE#         26
   -------         ENDPROC       MODEL2
   -------         PROC          MODEL3
-  C:0E9CH         LINE#         27
-  C:0E9CH         LINE#         35
+  C:0E98H         LINE#         27
+  C:0E98H         LINE#         35
   -------         ENDPROC       MODEL3
   -------         PROC          MODEL4
-  C:0E9DH         LINE#         37
-  C:0E9DH         LINE#         45
+  C:0E99H         LINE#         37
+  C:0E99H         LINE#         45
   -------         ENDPROC       MODEL4
   -------         PROC          MODEL5
-  C:0E9EH         LINE#         47
-  C:0E9EH         LINE#         55
+  C:0E9AH         LINE#         47
+  C:0E9AH         LINE#         55
   -------         ENDPROC       MODEL5
   -------         PROC          SWITCHMODEL
   C:0D04H         LINE#         56
@@ -1379,7 +1379,7 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:0080H         PUBLIC        P0
   D:0090H         PUBLIC        P1
   D:00A0H         PUBLIC        P2
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 24
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 24
 
 
   D:00B0H         PUBLIC        P3
@@ -1387,27 +1387,23 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:0E0AH         PUBLIC        main
+  C:0E22H         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  B:0090H.4       PUBLIC        P14
-  B:0090H.5       PUBLIC        P15
   D:0078H         PUBLIC        pwm
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:0E0AH         LINE#         3
-  C:0E0AH         LINE#         4
-  C:0E0AH         LINE#         8
-  C:0E0DH         LINE#         9
-  C:0E0FH         LINE#         39
-  C:0E15H         LINE#         41
-  C:0E1CH         LINE#         46
-  C:0E1EH         LINE#         47
-  C:0E20H         LINE#         48
-  C:0E20H         LINE#         49
-  C:0E20H         LINE#         69
-  C:0E23H         LINE#         71
+  C:0E22H         LINE#         3
+  C:0E22H         LINE#         4
+  C:0E22H         LINE#         8
+  C:0E25H         LINE#         9
+  C:0E27H         LINE#         39
+  C:0E2DH         LINE#         41
+  C:0E34H         LINE#         48
+  C:0E34H         LINE#         49
+  C:0E34H         LINE#         69
+  C:0E37H         LINE#         71
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
@@ -1439,12 +1435,12 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
   C:01BEH         PUBLIC        ?C?SLCMP
   -------         ENDMOD        ?C?SLCMP
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 25
-
-
   -------         MODULE        ?C?ULCMP
   C:01D4H         PUBLIC        ?C?ULCMP
   -------         ENDMOD        ?C?ULCMP
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 25
+
 
   -------         MODULE        ?C?ULSHR
   C:01E5H         PUBLIC        ?C?ULSHR
@@ -1499,13 +1495,13 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
     SEGMENT: ?PR?_SETMAINDAVALUE1?TLC5620
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-BL51 BANKED LINKER/LOCATER V6.22                                                      04/18/2016  13:44:51  PAGE 26
-
-
     SEGMENT: ?PR?KEY_INIT?KEY
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?PCA_CONFIG?PCA
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/28/2016  09:58:13  PAGE 26
+
+
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_SETTIMERPWM?PWM
@@ -1516,5 +1512,5 @@ SYMBOL TABLE OF MODULE:  rgbcode (?C_STARTUP)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?SWITCHMODEL?MODEL
 
-Program Size: data=125.4 xdata=256 code=3743
+Program Size: data=125.4 xdata=256 code=3739
 LINK/LOCATE RUN COMPLETE.  13 WARNING(S),  0 ERROR(S)
