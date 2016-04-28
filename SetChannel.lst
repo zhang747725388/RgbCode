@@ -1,0 +1,57 @@
+C51 COMPILER V9.52.0.0   SETCHANNEL                                                        04/14/2016 21:31:10 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE SETCHANNEL
+OBJECT MODULE PLACED IN SetChannel.obj
+COMPILER INVOKED BY: C:\keilC51\C51\BIN\C51.EXE APP\SetChannel.c BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) D
+                    -EBUG OBJECTEXTEND PRINT(.\SetChannel.lst) TABS(2) OBJECT(SetChannel.obj)
+
+line level    source
+
+   1          #include "rsystem.h"
+   2          u16 pwm0,pwm1,pwm2,pwm3;
+   3          
+   4          void SetChannelData(u8 channel,u8  datavalue){
+   5   1      
+   6   1        switch(channel){
+   7   2        case 1:UpdatePwm(PCA0,datavalue);
+   8   2          break;
+   9   2        case 2:UpdatePwm(PCA1,datavalue);
+  10   2          break;
+  11   2        case 3:UpdatePwm(PCA2,datavalue);
+  12   2          break;
+  13   2        case 4:UpdatePwm(PCA3,datavalue);
+  14   2          break;
+  15   2        case 5:
+  16   2         
+  17   2          TLC5620_SetOutput(CHL0,datavalue);
+  18   2          break;
+  19   2        case 6: 
+  20   2          TLC5620_SetOutput(CHL1,datavalue);
+  21   2          break;
+  22   2        case 7: 
+  23   2          TLC5620_SetOutput(CHL2,datavalue);
+  24   2          break;  
+  25   2        case 8:
+  26   2       
+  27   2          TLC5620_SetOutput(CHL3,datavalue);
+  28   2          break;    
+  29   2      }
+  30   1       
+  31   1      }
+  32          
+  33          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     98    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      8       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

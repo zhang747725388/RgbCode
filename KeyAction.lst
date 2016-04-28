@@ -1,0 +1,63 @@
+C51 COMPILER V9.52.0.0   KEYACTION                                                         04/14/2016 21:31:10 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE KEYACTION
+OBJECT MODULE PLACED IN KeyAction.obj
+COMPILER INVOKED BY: C:\keilC51\C51\BIN\C51.EXE APP\KeyAction.c BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DE
+                    -BUG OBJECTEXTEND PRINT(.\KeyAction.lst) TABS(2) OBJECT(KeyAction.obj)
+
+line level    source
+
+   1          #include "rsystem.h"
+   2          SYSTIMER KEY_Tim;//按键时间基数
+   3          u8 keyflag=0;
+   4          void KeyAction(u8 flag){
+   5   1        
+   6   1      
+   7   1              switch(flag){
+   8   2      
+   9   2      
+  10   2                  case KEY0_UP:
+  11   2                  pwm2  = 3000; //PWM逐渐减到最小
+  12   2                  LoadPWM(pwm2); 
+  13   2                  TX1_write2buff(PWM_low); 
+  14   2                  break;  
+  15   2                  case KEY1_UP:   
+  16   2                        pwm2  = 3100; //PWM逐渐减到最小
+  17   2                              LoadPWM(pwm2);
+  18   2                    PrintString1("Key2...\r\n");
+  19   2                  break;
+  20   2                  case KEY2_UP: 
+  21   2                  PrintString1("Key3...\r\n");
+  22   2                  break;
+  23   2                  case KEY3_UP:  
+  24   2                  PrintString1("Key4...\r\n");
+  25   2                  break;
+  26   2          }
+  27   1      }
+  28          
+  29          void MainKeytask(void){
+  30   1      
+  31   1              if(Timer_GetElapse(&KEY_Tim) >5){
+  32   2      
+  33   2                keyflag =Key_Scan();
+  34   2                KeyAction(keyflag);
+  35   2                Timer_Reset(&KEY_Tim);
+  36   2           }
+  37   1       
+  38   1      }
+  39           
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    108    ----
+   CONSTANT SIZE    =     30    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      3    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

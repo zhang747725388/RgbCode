@@ -1,0 +1,1 @@
+"BSP\delay.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND PRINT(.\delay.lst) TABS (2) OBJECT(delay.obj)

@@ -1,0 +1,102 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/18/2016 12:41:51 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN Main.OBJ
+COMPILER INVOKED BY: C:\keilC51\C51\BIN\C51.EXE Main.c BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJEC
+                    -TEXTEND TABS(2)
+
+line level    source
+
+   1          #include "rsystem.h"
+   2          u16 pwm=0;
+   3          void main (void)
+   4          {  
+   5   1      //    GPIO_config();
+   6   1      ////   TLC5620_Init();
+   7   1      ////   UART_config();
+   8   1           Timer_config();
+   9   1         EA=1;
+  10   1      //    PCA_config();
+  11   1      //////  
+  12   1      //  PrintString1("Init UART1...\r\n");  //SUART1发送一个字符串
+  13   1      ////// 
+  14   1      // pwm3=255-(255/4);
+  15   1      // pwm1=255-(255/4);
+  16   1      // pwm0=255-(255/16);
+  17   1        
+  18   1        
+  19   1      ////  UpdatePwm(PCA0,pwm0);
+  20   1      ////  UpdatePwm(PCA1,pwm1);
+  21   1      //    SetChannelData(3,pwm2);
+  22   1      //    SetChannelData(1,pwm0);
+  23   1      ////  UpdatePwm(PCA3,pwm3);
+  24   1      ////TLC5620_AllOutput(dat1);
+  25   1      ////       SetChannelData(5,27);
+  26   1      //     //  SetChannelData(6,27);
+  27   1      //   TLC5620_SetOutput(0,170);
+  28   1      //   TLC5620_SetOutput(1,175);
+  29   1      //   //      TLC5620_SetOutput(1,100);
+  30   1      //      TLC5620_SetOutput(0,22);
+  31   1      //      TLC5620_SetOutput(1,42);
+  32   1      //      TLC5620_SetOutput(2,62);
+  33   1      //      TLC5620_SetOutput(3,82);
+  34   1      ////       TLC5620_SetOutput(3,80);
+  35   1      ////       SetChannelData(8,27);
+  36   1      //   
+  37   1      //     
+  38   1         
+  39   1       pwm = PWM_DUTY*1 / 10; //给PWM一个初值，这里为10%占空比
+  40   1      //LoadPWM(pwm2);      //计算PWM重装值
+  41   1      LoadPWM(pwm);
+  42   1      // UpdatePwm(PCA3,pwm3);
+  43   1      // UpdatePwm(PCA2,pwm1);
+  44   1      // UpdatePwm(PCA1,pwm0);
+  45   1       
+  46   1      P15=1;
+  47   1      P14=1;
+  48   1        while(1)
+  49   1         {
+  50   2           
+  51   2         
+  52   2           
+  53   2      //     if(Timer_GetElapse(&Pwm_Tim) <20){
+  54   2      //              TLC5620_SetOutput(0,22);
+C51 COMPILER V9.52.0.0   MAIN                                                              04/18/2016 12:41:51 PAGE 2   
+
+  55   2      //      }  
+  56   2      //      if((Timer_GetElapse(&Pwm_Tim) >20)&&((Timer_GetElapse(&Pwm_Tim)<160))){
+  57   2      //             TLC5620_SetOutput(0,122);
+  58   2      //                    
+  59   2      //      } 
+  60   2      //      if(Timer_GetElapse(&Pwm_Tim) >160){
+  61   2      ////                  PrintString1("Init UART1...\r\n");  //SUART1发送一个字符串 
+  62   2      //          TLC5620_SetOutput(0,22);
+  63   2      //                  Timer_Reset(&Pwm_Tim); 
+  64   2      //                    
+  65   2      //      }     
+  66   2      
+  67   2      
+  68   2        
+  69   2          MainKeytask(); 
+  70   2      //  LoadPWM(pwmtt);     //计算PWM重装值
+  71   2        }
+  72   1      }
+  73           
+  74           
+  75          
+  76           
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     27    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

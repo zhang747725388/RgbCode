@@ -1,0 +1,1 @@
+"APP\SetChannel.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND PRINT(.\SetChannel.lst) TABS (2) OBJECT(SetChannel.obj)

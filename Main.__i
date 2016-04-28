@@ -1,0 +1,1 @@
+"Main.c" BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG OBJECTEXTEND TABS (2)

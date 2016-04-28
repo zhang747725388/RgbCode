@@ -1,0 +1,112 @@
+C51 COMPILER V9.52.0.0   MODEL                                                             04/14/2016 21:31:10 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MODEL
+OBJECT MODULE PLACED IN Model.obj
+COMPILER INVOKED BY: C:\keilC51\C51\BIN\C51.EXE APP\Model.c BROWSE INCDIR(.\APP;.\BSP;..\..\CodeGroup;..\rgbcode) DEBUG 
+                    -OBJECTEXTEND PRINT(.\Model.lst) TABS(2) OBJECT(Model.obj)
+
+line level    source
+
+   1          #include "rsystem.h"
+   2          u8 modelflag=0;
+   3          void ModeOFF(){
+   4   1      
+   5   1      
+   6   1      
+   7   1      
+   8   1      }
+   9          void Model1(){
+  10   1      
+  11   1      
+  12   1      
+  13   1      
+  14   1      
+  15   1      
+  16   1      
+  17   1      }
+  18          void Model2(){
+  19   1      
+  20   1      
+  21   1      
+  22   1      
+  23   1      
+  24   1      
+  25   1      
+  26   1      }
+  27          void Model3(){
+  28   1      
+  29   1      
+  30   1      
+  31   1      
+  32   1      
+  33   1      
+  34   1      
+  35   1      }
+  36          
+  37          void Model4(){
+  38   1      
+  39   1      
+  40   1      
+  41   1      
+  42   1      
+  43   1      
+  44   1      
+  45   1      }
+  46          
+  47          void Model5(){
+  48   1      
+  49   1      
+  50   1      
+  51   1      
+  52   1      
+  53   1      
+  54   1      
+C51 COMPILER V9.52.0.0   MODEL                                                             04/14/2016 21:31:10 PAGE 2   
+
+  55   1      }
+  56          void SwitchModel(){
+  57   1      
+  58   1      switch(modelflag){
+  59   2      
+  60   2      case 1:
+  61   2        Model1();
+  62   2        break;
+  63   2      
+  64   2      case 2:
+  65   2        Model2();
+  66   2        break;
+  67   2      
+  68   2      case 3:
+  69   2        Model3();
+  70   2        break;
+  71   2      case 4:
+  72   2        Model4();
+  73   2        break;
+  74   2      case 5:
+  75   2        Model5();
+  76   2        break;
+  77   2      case 0:
+  78   2        ModeOFF();
+  79   2        break;
+  80   2      
+  81   2      }
+  82   1      
+  83   1      
+  84   1      
+  85   1      
+  86   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     46    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
