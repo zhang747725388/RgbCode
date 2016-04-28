@@ -77,9 +77,6 @@ void	Timer_config(void)
 	TIM_InitStructure.TIM_Value     = 65536UL - 2700;	//初值,
 	TIM_InitStructure.TIM_Run       = ENABLE;				//是否初始化后启动定时器, ENABLE或DISABLE
 	Timer_Inilize(Timer0,&TIM_InitStructure);				//初始化Timer0	  Timer0,Timer1,Timer2
-//	
-//	
-	
 	
 //	TIM_InitStructure1.TIM_Mode      = TIM_16Bit;	//指定工作模式,   TIM_16BitAutoReload,TIM_16Bit,TIM_8BitAutoReload,TIM_16BitAutoReloadNoMask
 //	TIM_InitStructure1.TIM_Polity    = PolityHigh;			//指定中断优先级, PolityHigh,PolityLow
